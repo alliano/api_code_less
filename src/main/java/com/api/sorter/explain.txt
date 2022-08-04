@@ -1,0 +1,17 @@
+untuk melakauakn paging
+/users?pages=(halaman ke berapa)&size=(berapa data)
+ex : /users?pages=3&size=4
+
+untuk menampilkan semua data
+/users/
+
+untuk meng custom path url api :
+application.properties
+spring.data.rest.basePath=(url yang diinginkan)
+
+ntuk mencari berdasarkan email 
+/users/search?findByEmail=(nama email yang mau dicari)
+example : http://localhost:8080/api/users/search/findByEmail?email=allianoanonymous%40gmail.com
+
+untuk mencari berdasarkan nama : 
+example : http://localhost:8080/api/users/search/findByNameContains?name=alli&page=0&size=2
